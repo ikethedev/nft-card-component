@@ -1,0 +1,192 @@
+body{
+    background-color: #0D192C;
+    position: relative;
+    z-index: -10000000;
+}
+
+main{
+    font-family: "Outfit", sans-serif;
+    background-color: #15263F;
+    max-width: 350px;
+    border-radius: 15px;
+    margin: 62px auto 0;
+    position: relative;
+    z-index: -1000;
+}
+
+.card{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-right: 1.125rem;
+    padding-left: 1.125rem;
+}
+
+@media screen and (min-width: 1440px){
+    .card{
+        max-width: 350px;
+    }
+}
+
+.card__picture{
+    position: relative;
+}
+
+.card__image{
+    display: block;
+    width: 278px;
+    height: 278px;
+    border-radius: 16px;
+    margin: 0 auto;
+}
+
+.card__image:hover{
+    opacity: 0.2;
+}
+
+
+@media screen and (min-width: 1440px){
+    .card__image{
+        width: 302px;
+        height: 302px;
+    }
+}
+
+.card__picture{
+    cursor: pointer;
+}
+
+.card__hover:hover{
+    display: none;
+}
+
+.card__view{
+    display: none;
+}
+
+@media screen and (min-width: 1440px){
+    .card__hover{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        display: block;
+        background-color: #00FFF8;
+        width: 302px;
+        height: 302px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 17px;
+        z-index: -2;
+    }
+
+
+.card__view{
+    display: block;
+    margin: auto;
+    width: 48px;
+    height: 48px;
+}
+}
+
+
+
+.card__description{
+    padding: 1.1rem;
+}
+
+.card__title{
+    font-size: 1.375rem;
+    color: #fff;
+    font-weight: 600;
+}
+
+.card__title:hover{
+    color:#00FFF8;
+    cursor: pointer;
+}
+
+.card__text{
+    font-size: 1.125rem;
+    color:#8BACD9;
+    line-height: 126%;
+    font-weight: 200;
+}
+
+.card__value-container{
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9375rem;
+}
+
+.card__value{
+    font-weight: 600;
+}
+
+.card__cost{
+    display: flex;
+    align-items: center; 
+    gap: 0.25rem;
+}
+
+.card__ethereum{
+    height: 18px;
+    width: 11px;
+}
+
+.card__cost{
+    color: #00FFF8;
+}
+
+.card__time{
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.card__clock{
+    height: 16px;
+    width: 16px
+}
+
+.card__left{
+    color:#8BACD9;
+    font-weight: 400;
+}
+
+.card__seperate{
+    width: 100%;
+    height: 1px;
+    background-color: #2E405A;
+}
+
+.card__footer{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 1.1rem;
+    gap: 1rem;
+}
+
+.card__footer-picture{
+    border-radius: 50%;
+    border: 1px white solid;
+}
+
+.card__avatar{
+    height: 33px;
+    width: 33px;
+}
+
+.white{
+    color: #fff;
+}
+
+.white:hover{
+    cursor: pointer;
+    color: #00FFF8;
+}
+
+.card__creator{
+    color: #8BACD9;
+}
